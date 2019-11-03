@@ -1,13 +1,20 @@
 public class Example7 {
     public static void main(String[] args)
-    { int n = 0;
-        for(int i=0;i<5;i++){
-            n = f(++n);
-        }
-        System.out.println(n);
-    }
-    public static int f(int n)
     {
-        return ++n;
+        int [] a={10,20,30};
+
+        System.out.println(sum(a));
+    }
+
+
+    public static int sum(int [] b)
+    {
+
+        int sum=0;
+        for(int i = 0; i<b.length; i++)
+        {
+            sum=sum+b[i];
+        }
+        return sum;
     }
 }
